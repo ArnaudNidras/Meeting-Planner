@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Meeting Planner</string>
+    <string name="title_activity_meeting_creation">MeetingCreationActivity</string>
+    <string name="title_activity_main">Meeting Planner</string>
+
+    <string name="date_text">The date is :</string>
+    <string name="date_button_set">Set Date</string>
+    <string name="time_text">At :</string>
+    <string name="time_button_set">Set Time</string>
+    <string name="add_meeting_button">Add New Meeting !</string>
+    <string name="add_place">Meeting Place</string>
+    <string name="add_description">Meeting Description</string>
+
+    <string name="frag_place">Place : \n</string>
+    <string name="frag_description">Description :\n</string>
+    <string name="frag_map">See place in Google Map</string>
+
+    <string name="menu_add">Add a new meeting</string>
+    <string name="menu_show">List of meetings</string>
+    <string name="menu_download">Download meetings</string>
+
+    <string name="pref_language">Language</string>
+    <string name="pref_international">International</string>
+    <string name="pref_summary">Enable to switch in English, disable to switch to phone\'s language</string>
+
+    <string name="notif_title">Meeting Planner Update</string>
+    <string name="notif_text"> new meetings added !</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="toast_download">Download complete !</string>
+
+    <string name="action_settings">Settings</string>
+
+</resources>

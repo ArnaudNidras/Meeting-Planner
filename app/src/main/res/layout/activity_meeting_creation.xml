@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_meeting_creation"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fr.arnaud_piriou.meetingplanner.MeetingCreationActivity">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true" >
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            android:id="@+id/toolbarlayout">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        </android.support.design.widget.AppBarLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbarlayout">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+
+
+                <Button
+                    android:id="@+id/setDateButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/date_button_set"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true" />
+
+                <TextView
+                    android:text="@string/date_text"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/setDateButton"
+                    android:layout_alignLeft="@+id/setDateButton"
+                    android:layout_alignRight="@+id/setDateButton"
+                    android:layout_alignEnd="@+id/setDateButton"
+                    android:id="@+id/dateText"
+                    android:layout_width="match_parent" />
+
+                <Button
+                    android:text="@string/time_button_set"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/setDateButton"
+                    android:layout_alignLeft="@+id/setDateButton"
+                    android:layout_alignRight="@+id/setDateButton"
+                    android:layout_alignEnd="@+id/setDateButton"
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/setTimeButton" />
+
+                <TextView
+                    android:text="@string/time_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/timeText"
+                    android:layout_below="@+id/setDateButton"
+                    android:layout_alignLeft="@+id/setDateButton"
+                    android:layout_alignRight="@+id/setDateButton"
+                    android:layout_alignEnd="@+id/setDateButton"
+                    android:layout_alignStart="@+id/dateText" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:text="@string/add_place"
+                    android:ems="10"
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/addPlace"
+                    android:layout_below="@+id/setDateButton"
+                    android:layout_alignRight="@+id/setDateButton"
+                    android:layout_alignEnd="@+id/setDateButton"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:text="@string/add_description"
+                    android:ems="10"
+                    android:layout_marginTop="32dp"
+                    android:id="@+id/addDescription"
+                    android:layout_below="@+id/setDateButton"
+                    android:layout_alignLeft="@+id/setDateButton"
+                    android:layout_alignRight="@+id/setDateButton"
+                    android:layout_alignEnd="@+id/setDateButton"
+                    android:layout_above="@+id/ratingBar" />
+
+                <RatingBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ratingBar"
+                    android:numStars="5"
+                    android:layout_marginTop="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_below="@+id/setDateButton"
+                    android:layout_alignLeft="@+id/setDateButton"
+                    android:layout_alignRight="@+id/setDateButton"
+                    android:layout_alignEnd="@+id/setDateButton" />
+
+                <Button
+                    android:text="@string/add_meeting_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/addMeetingButton"
+                    android:layout_marginTop="15dp"
+                    android:layout_below="@+id/setDateButton"
+                    android:layout_alignLeft="@+id/setDateButton"
+                    android:layout_alignRight="@+id/setDateButton"
+                    android:layout_alignEnd="@+id/setDateButton" />
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>

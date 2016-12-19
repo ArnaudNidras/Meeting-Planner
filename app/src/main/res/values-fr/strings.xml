@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PlanificateurdeReunion</string>
+    <string name="title_activity_meeting_creation">MeetingCreationActivity</string>
+    <string name="title_activity_main">Meeting Planner</string>
+
+    <string name="date_text">Date planifiée :</string>
+    <string name="date_button_set">Choisir la date</string>
+    <string name="time_text">A : </string>
+    <string name="time_button_set">Choisir l\'horaire</string>
+    <string name="add_meeting_button">Ajouter la réunion !</string>
+    <string name="add_place">Lieu</string>
+    <string name="add_description">Description</string>
+
+    <string name="frag_place">Lieu : \n</string>
+    <string name="frag_description">Description :\n</string>
+    <string name="frag_map">Voir le lieu avec Google Map</string>
+
+    <string name="menu_add">Ajouter une nouvelle réunion</string>
+    <string name="menu_show">Liste des réunions</string>
+    <string name="menu_download">Télécharger les dernières réunions</string>
+
+    <string name="notif_title">MàJ Planificateur de réunion</string>
+    <string name="notif_text"> nouvelles réunions ajoutées !</string>
+
+    <string name="pref_language">Langue</string>
+    <string name="pref_international">International</string>
+    <string name="pref_summary">Activer pour changer la langue en Anglais. Déscativer pour la choisir la langue du téléphone</string>
+
+    <string name="toast_download">Téléchargement terminé !</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Paramètres</string>
+
+</resources>
